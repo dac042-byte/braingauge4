@@ -2,6 +2,32 @@
 
 A mobile application that tracks cognitive changes in athletes through weekly assessments. **NOT a medical device** - purely for performance monitoring and trend awareness.
 
+---
+
+## 🚀 **NEW USER? START HERE!**
+
+Choose your guide:
+
+- **📋 [START_HERE.md](START_HERE.md)** - Quick command cheat sheet (fastest!)
+- **🎯 [QUICKSTART.md](QUICKSTART.md)** - Visual step-by-step guide (10 minutes)
+- **📚 [STARTUP_GUIDE.md](STARTUP_GUIDE.md)** - Detailed setup with troubleshooting
+
+**TL;DR Quick Start:**
+```bash
+# 1. Get OpenAI API key from https://platform.openai.com/
+# 2. Backend setup:
+cd backend && python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env  # Add your API key here
+python app.py
+
+# 3. Mobile app (new terminal):
+cd mobile-app && npm install && npx expo start
+# Scan QR code with Expo Go app!
+```
+
+---
+
 ## Features
 
 ### 📊 Three Weekly Assessment Modules
