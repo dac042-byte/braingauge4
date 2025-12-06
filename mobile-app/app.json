@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "BrainGauge",
+    "slug": "braingauge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4F46E5"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "BrainGauge needs camera access for eye tracking assessments.",
+        "NSMicrophoneUsageDescription": "BrainGauge needs microphone access for speech assessments."
+      },
+      "bundleIdentifier": "com.braingauge.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4F46E5"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.braingauge.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow BrainGauge to access your camera for eye tracking assessments."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow BrainGauge to access your microphone for speech assessments."
+        }
+      ]
+    ]
+  }
+}
